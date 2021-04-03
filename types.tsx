@@ -3,9 +3,22 @@ export type RootStackParamList = {
   NotFound: undefined;
 };
 
+export type ButtonParamList = {
+  text : string;
+  onPress : () => void;
+  style? : StyleSheet;
+}
+
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
-  TabThree : undefined;
+  RegisterTab: undefined;
+  MainTab: undefined;
+  ProfileTab : undefined;
 };
 
+export type ProfileTabParamList = {
+  ProfileScreen: undefined;
+};
+
+export type MainTabParamList = {
+  MainScreen : undefined;
+}
